@@ -67,7 +67,7 @@ function ExampleOne() {
       <h2>Example one</h2>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">Basic shapes</a>:</p>
       {/* Default is: width="300" height="150" */}
-      <svg width="200" height="250">
+      <svg>
         <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
         <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5"/>
 
@@ -78,10 +78,10 @@ function ExampleOne() {
         <polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
             stroke="orange" fill="transparent" stroke-width="5"/>
 
-        <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+        <polygon points="150,60 155,80 170,80 160,90 165,105 150,95 135,105 140,90 130,80 145,80"
             stroke="green" fill="transparent" stroke-width="5"/>
 
-        <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5"/>
+        <path d="M120,130 Q140,105 150,130 T190,130" fill="none" stroke="blue" stroke-width="5"/>
       </svg>
     </div>
   );
