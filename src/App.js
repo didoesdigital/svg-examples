@@ -34,20 +34,22 @@ export default function App() {
 
         <hr />
 
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/example-one">
-            <ExampleOne />
-          </Route>
-          <Route path="/example-two">
-            <ExampleTwo />
-          </Route>
-          <Route path="/example-three">
-            <ExampleThree />
-          </Route>
-        </Switch>
+        <div style={{ minHeight: '100vh' }}>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/example-one">
+              <ExampleOne />
+            </Route>
+            <Route path="/example-two">
+              <ExampleTwo />
+            </Route>
+            <Route path="/example-three">
+              <ExampleThree />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
