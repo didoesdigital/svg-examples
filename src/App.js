@@ -71,20 +71,20 @@ function ExampleOne() {
       {/* Default is: width="300" height="150" */}
       {/* <svg viewBox="0 0 300 150" style={{ maxWidth: "300px" }}> */}
       <svg>
-        <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" strokeWidth="5"/>
-        <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" strokeWidth="5"/>
+        <rect role="presentation" x="10" y="10" width="30" height="30" stroke="black" fill="transparent" strokeWidth="5"/>
+        <rect role="presentation" x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" strokeWidth="5"/>
 
-        <circle cx="25" cy="75" r="20" stroke="red" fill="transparent" strokeWidth="5"/>
-        <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" strokeWidth="5"/>
+        <circle role="presentation" cx="25" cy="75" r="20" stroke="red" fill="transparent" strokeWidth="5"/>
+        <ellipse role="presentation" cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" strokeWidth="5"/>
 
-        <line x1="10" x2="50" y1="110" y2="150" stroke="orange" strokeWidth="5"/>
-        <polyline points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
+        <line role="presentation" x1="10" x2="50" y1="110" y2="150" stroke="orange" strokeWidth="5"/>
+        <polyline role="presentation" points="60 110 65 120 70 115 75 130 80 125 85 140 90 135 95 150 100 145"
             stroke="orange" fill="transparent" strokeWidth="5"/>
 
-        <polygon points="150,60 155,80 170,80 160,90 165,105 150,95 135,105 140,90 130,80 145,80"
+        <polygon role="presentation" points="150,60 155,80 170,80 160,90 165,105 150,95 135,105 140,90 130,80 145,80"
             stroke="green" fill="transparent" strokeWidth="5"/>
 
-        <path d="M120,130 Q140,105 150,130 T190,130" fill="none" stroke="blue" strokeWidth="5"/>
+        <path role="presentation" d="M120,130 Q140,105 150,130 T190,130" fill="none" stroke="blue" strokeWidth="5"/>
 
         <text x="120" y="0" dy="1.5em" fill="#3C3941" fontSize="1.4em" fontWeight="600">text</text>
       </svg>
