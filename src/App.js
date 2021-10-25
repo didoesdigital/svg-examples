@@ -69,6 +69,7 @@ function ExampleOne() {
       <h2>Example one</h2>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">Basic shapes</a>:</p>
       {/* Default is: width="300" height="150" */}
+      {/* <svg viewBox="0 0 300 150" style={{ maxWidth: "300px" }}> */}
       <svg>
         <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" strokeWidth="5"/>
         <rect x="60" y="10" rx="10" ry="10" width="30" height="30" stroke="black" fill="transparent" strokeWidth="5"/>
