@@ -84,6 +84,8 @@ function ExampleOne() {
             stroke="green" fill="transparent" stroke-width="5"/>
 
         <path d="M120,130 Q140,105 150,130 T190,130" fill="none" stroke="blue" stroke-width="5"/>
+
+        <text x="120" y="0" dy="1.5em" fill="#3C3941" font-size="1.4em" font-weight="600">text</text>
       </svg>
     </div>
   );
