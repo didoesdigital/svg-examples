@@ -91,10 +91,23 @@ function ExampleOne() {
   );
 }
 
+function updateFavicon() {
+  const favicon = document.querySelector("link[rel~='icon']")
+  favicon.href = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🎉</text></svg>'
+  setTimeout(restoreFavicon, 3000);
+}
+
+function restoreFavicon() {
+  document.querySelector("link[rel~='icon']").href = process.env.PUBLIC_URL + "/favicon.ico"
+}
+
 function ExampleTwo() {
   return (
     <div>
       <h2>Example two</h2>
+
+      <button onClick={() => updateFavicon()}>Update favicon</button>
+
     </div>
   );
 }
