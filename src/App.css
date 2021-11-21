@@ -37,6 +37,15 @@ a {
   color: #1F74D1;
 }
 
+ul {
+  margin-left: 0px;
+  padding-left: 16px;
+}
+li {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

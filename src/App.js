@@ -25,20 +25,22 @@ export default function App() {
             Edit <code>src/App.js</code> and save to reload.
           </p>
         </header>
-        <ul style={{ display: 'flex', listStyleType: 'none', justifyContent: 'space-between' }}>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/example-one">Example one</Link>
-          </li>
-          <li>
-            <Link to="/example-two">Example two</Link>
-          </li>
-          <li>
-            <Link to="/example-three">Example three</Link>
-          </li>
-        </ul>
+        <nav>
+          <ul style={{ display: 'flex', listStyleType: 'none', justifyContent: 'space-between', marginRight: "16px" }}>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/example-one">Example one</Link>
+            </li>
+            <li>
+              <Link to="/example-two">Example two</Link>
+            </li>
+            <li>
+              <Link to="/example-three">Example three</Link>
+            </li>
+          </ul>
+        </nav>
 
         <hr />
 
