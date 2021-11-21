@@ -17,7 +17,7 @@ SyntaxHighlighter.registerLanguage('jsx', jsx);
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/svg-examples">
       <div className="App">
         <nav>
           <ul style={{ display: 'flex', listStyleType: 'none', justifyContent: 'space-between', marginRight: "16px" }}>
