@@ -19,12 +19,6 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-        </header>
         <nav>
           <ul style={{ display: 'flex', listStyleType: 'none', justifyContent: 'space-between', marginRight: "16px" }}>
             <li>
@@ -66,6 +60,12 @@ export default function App() {
             </Route>
           </Switch>
         </div>
+        <footer className="App-footer">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit <code>src/App.js</code> and save to reload.
+          </p>
+        </footer>
       </div>
     </Router>
   );

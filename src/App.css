@@ -25,7 +25,7 @@ code, .token {
 text { fill: #676170; }
 h1 { color: #504C57; }
 
-.App-header {
+.App-footer {
   background-color: #3D3D3D;
   min-height: 100vh;
   display: flex;
