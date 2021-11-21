@@ -67,6 +67,22 @@ function Home() {
   return (
     <div>
       <h2>Home</h2>
+      <div style={{maxWidth: "650px", width: "100%", textAlign: "left", margin: "0 auto" }}>
+        <p>Some resources:</p>
+        <ul style={{ lineHeight: "1.5em" }}>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG">MDN docs: SVG</a></li>
+          <li><a href="https://caniuse.com/?search=svg">CanIUse SVG…</a></li>
+          <li><a href="https://wattenberger.com/guide/scaling-svg">Scaling SVG Elements: Getting an understanding of viewBox by Amelia Wattenberger</a></li>
+          <li><a href="https://css-tricks.com/accessible-svgs/">Accessible SVGs</a></li>
+          <li><a href="https://svgtojsx.com/">SVG-to-JSX</a></li>
+          <li><a href="https://transform.tools/">Transform SVG to jsx</a></li>
+          <li><a href="https://www.figma.com/community/plugin/749818562498396194/SVG-to-JSX">Figma SVG to JSX</a></li>
+          <li><a href="https://react-svgr.com/docs/getting-started">React SVGR</a></li>
+          <li><a href="https://gregberge.com/blog/svg-to-react-component-with-svgr">SVG to React component with SVGR by Greg Bergé</a></li>
+          <li><a href="https://svg-path-visualizer.netlify.app">Path visualizer</a></li>
+          <li><a href="https://stackoverflow.com/questions/18467982/are-svg-parameters-such-as-xmlns-and-version-needed">Stack Overflow: Are SVG parameters such as 'xmlns' and 'version' needed?</a></li>
+        </ul>
+      </div>
     </div>
   );
 }
