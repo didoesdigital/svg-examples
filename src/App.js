@@ -39,6 +39,9 @@ export default function App() {
             <li>
               <Link to="/example-three">Example three</Link>
             </li>
+            <li>
+              <Link to="/example-four">Example four</Link>
+            </li>
           </ul>
         </nav>
 
@@ -58,10 +61,38 @@ export default function App() {
             <Route path="/example-three">
               <ExampleThree />
             </Route>
+            <Route path="/example-four">
+              <ExampleFour />
+            </Route>
           </Switch>
         </div>
       </div>
     </Router>
+  );
+}
+
+function Icon({title, titleId, hidden, props}) {
+  return (
+    <svg
+      className="icon"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      role={hidden ? null : "img"}
+      aria-labelledby={titleId}
+      aria-hidden={hidden ? true : null}
+      {...props}
+    >
+      {title ? <title id={titleId}>{title}</title> : null}
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M9.395 1a.5.5 0 00-.486.384l-4.762 20a.5.5 0 00.486.616h14.734a.5.5 0 00.486-.616l-2.216-9.308 1.87-2.137a2 2 0 10-1.434-1.399L17.07 9.689l-1.977-8.305A.5.5 0 0014.604 1h-5.21zm6.102 10.485l-1.906-8.1A.5.5 0 0013.104 3h-2.208a.5.5 0 00-.486.385l-2.824 12a.5.5 0 00.487.615h3.473l3.95-4.515zM14.204 16h1.724a.5.5 0 00.487-.614l-.355-1.507L14.204 16zm-7.559 3.386a.5.5 0 00.487.614h9.737a.5.5 0 00.487-.614l-.236-1a.5.5 0 00-.486-.386H7.367a.5.5 0 00-.487.386l-.235 1zM12 7a1 1 0 100-2 1 1 0 000 2zm.999 2a1 1 0 11-2 0 1 1 0 012 0zM12 13a1 1 0 100-2 1 1 0 000 2zm8-4.5a.5.5 0 100-1 .5.5 0 000 1z"
+        fill="currentColor"
+      />
+    </svg>
   );
 }
 
@@ -82,6 +113,8 @@ function Home() {
           <li><a href="https://react-svgr.com/docs/getting-started">React SVGR</a></li>
           <li><a href="https://gregberge.com/blog/svg-to-react-component-with-svgr">SVG to React component with SVGR by Greg Bergé</a></li>
           <li><a href="https://svg-path-visualizer.netlify.app">Path visualizer</a></li>
+          <li><a href="https://css-tricks.com/tips-aligning-icons-text/">Tips for Aligning Icons to Text by Geoff Graham</a></li>
+          <li><a href="https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4">Align SVG Icons to Text and Say Goodbye to Font Icons by Elliot Dahl</a></li>
           <li><a href="https://stackoverflow.com/questions/18467982/are-svg-parameters-such-as-xmlns-and-version-needed">Stack Overflow: Are SVG parameters such as 'xmlns' and 'version' needed?</a></li>
         </ul>
       </div>
@@ -234,6 +267,17 @@ function ExampleTwo() {
 }
 
 function ExampleThree() {
+  return (
+    <main>
+      <h1>Example three</h1>
+      <a href="https://didoesdigital.com/typey-type/support#metronome" target="_blank" rel="noreferrer" aria-label="Metronome opens in new tab" style={{ backgroundColor: "#EAF2FA", padding: "0.5em 1em", borderRadius: "8px", textDecoration: "none", color: "#093B72" }}>
+        <Icon title="Metronome" hidden={true} /> Typey Type metronome
+      </a>
+    </main>
+  );
+}
+
+function ExampleFour() {
   const data = [
     { category: "Mobile", count: 60 },
     { category: "Tablet", count: 1 },
@@ -287,4 +331,3 @@ function ExampleThree() {
     </main>
   );
 }
-

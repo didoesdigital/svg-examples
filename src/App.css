@@ -64,3 +64,9 @@ li {
   a { color: #7BB2EF; }
   h1 { color: #fff; }
 }
+
+.icon {
+  position: relative;
+  top: 0.125em;
+  left: -0.125em;
+}
