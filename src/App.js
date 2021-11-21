@@ -5,10 +5,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx';
+import { coy } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import logo from './logo.svg';
 import './App.css';
 import { scaleOrdinal } from "d3-scale";
 import { arc, pie } from "d3-shape";
+
+SyntaxHighlighter.registerLanguage('jsx', jsx);
 
 export default function App() {
   return (
@@ -192,11 +197,19 @@ function restoreFavicon() {
 }
 
 function ExampleTwo() {
+  const codeString = `<link
+  rel="icon"
+  type="image/svg+xml"
+  href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🎉</text></svg>'
+  >`
   return (
     <div>
       <h2>Example two</h2>
 
       <button onClick={() => updateFavicon()}>Update favicon</button>
+      <SyntaxHighlighter language="jsx" style={coy} wrapLongLines={true}>
+        {codeString}
+      </SyntaxHighlighter>
 
     </div>
   );
