@@ -104,9 +104,12 @@ function Home() {
         <p>Some resources:</p>
         <ul style={{ lineHeight: "1.5em" }}>
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG">MDN docs: SVG</a></li>
+          <li><a href="https://www.youtube.com/watch?v=emFMHH2Bfvo&feature=youtu.be">SVG Explained in 100 Seconds by Fireship on YouTube</a></li>
           <li><a href="https://caniuse.com/?search=svg">CanIUse SVG… by Alexis Deveria and community</a></li>
           <li><a href="https://wattenberger.com/guide/scaling-svg">Scaling SVG Elements: Getting an understanding of viewBox by Amelia Wattenberger</a></li>
+          <li><a href="https://www.sarasoueidan.com/blog/svg-coordinate-systems/">Understanding SVG Coordinate Systems and Transformations (Part 1) — The viewport, viewBox, and preserveAspectRatio by Sara Soueidan</a></li>
           <li><a href="https://css-tricks.com/accessible-svgs/">Accessible SVGs by Heather Migliorisi</a></li>
+          <li><a href="https://jakearchibald.github.io/svgomg/">SVGOMG by Jake Archibald</a> powered by <a href="https://github.com/svg/svgo">SVGO</a></li>
           <li><a href="https://svgtojsx.com/">SVG-to-JSX by Vishnu Baliga</a></li>
           <li><a href="https://transform.tools/">Transform SVG to jsx by Ritesh Kumar</a></li>
           <li><a href="https://www.figma.com/community/plugin/749818562498396194/SVG-to-JSX">Figma SVG to JSX by Sara Vieira</a></li>
