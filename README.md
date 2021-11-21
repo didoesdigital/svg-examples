@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# README
+
+This project shows some basic SVG examples, including:
+
+- syntax and basic shapes
+- emoji favicon
+- icons
+- donut chart
+
+It also includes resources, including articles for learning more and tools for optimisation and converting SVG to JSX.
+
+To run the project locally, clone the repo and run `yarn` to install dependencies, then follow the steps below.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
