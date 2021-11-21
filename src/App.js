@@ -269,7 +269,7 @@ function ExampleTwo() {
 function ExampleThree() {
   return (
     <main>
-      <h1>Example three</h1>
+      <h1><Icon title="Metronome" hidden={true} /> Example three</h1>
       <a href="https://didoesdigital.com/typey-type/support#metronome" target="_blank" rel="noreferrer" aria-label="Metronome opens in new tab" style={{ backgroundColor: "#EAF2FA", padding: "0.5em 1em", borderRadius: "8px", textDecoration: "none", color: "#093B72" }}>
         <Icon title="Metronome" hidden={true} /> Typey Type metronome
       </a>
