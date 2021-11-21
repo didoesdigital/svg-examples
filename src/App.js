@@ -68,7 +68,7 @@ export default function App() {
 function Home() {
   return (
     <main>
-      <h2>Home</h2>
+      <h1>Home</h1>
       <div style={{maxWidth: "650px", width: "100%", textAlign: "left", margin: "0 auto" }}>
         <p>Some resources:</p>
         <ul style={{ lineHeight: "1.5em" }}>
@@ -92,7 +92,7 @@ function Home() {
 function ExampleOne() {
   return (
     <main>
-      <h2>Example one</h2>
+      <h1>Example one</h1>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">Basic shapes</a>:</p>
       {/* Default is: width="300" height="150" */}
       {/* <svg viewBox="0 0 300 150" style={{ maxWidth: "300px" }}> */}
@@ -222,7 +222,7 @@ function ExampleTwo() {
   >`
   return (
     <main>
-      <h2>Example two</h2>
+      <h1>Example two</h1>
 
       <button onClick={() => updateFavicon()}>Update favicon</button>
       <SyntaxHighlighter language="jsx" style={coy} wrapLongLines={true}>
@@ -260,7 +260,7 @@ function ExampleThree() {
 
   return (
     <main>
-      <h2>Example three</h2>
+      <h1>Example three</h1>
       <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} style={{ maxWidth: `${width}px` }} aria-labelledby="my-donut">
         <title id="my-donut">Device donut chart</title>
 

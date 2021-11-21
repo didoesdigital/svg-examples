@@ -4,6 +4,9 @@ body {
 code, .token {
   font-family: "Pragmata Pro", "IBM Plex Mono", "JetBrainsMono", "Neue Montreal", "Fira Code", Consolas, "Andale Mono", Monaco, "Courier New", Courier, monospace;
 }
+.token {
+  filter: brightness(90%);
+}
 .App {
   text-align: center;
 }
@@ -20,7 +23,7 @@ code, .token {
 }
 
 text { fill: #676170; }
-h2 { color: #504C57; }
+h1 { color: #504C57; }
 
 .App-header {
   background-color: #3D3D3D;
@@ -59,5 +62,5 @@ li {
   html, svg { background-color: #242424; }
   text { fill: #fff; }
   a { color: #7BB2EF; }
-  h2 { color: #fff; }
+  h1 { color: #fff; }
 }
