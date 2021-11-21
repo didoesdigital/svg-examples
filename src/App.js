@@ -1,3 +1,4 @@
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -233,7 +234,7 @@ function ExampleThree() {
         <title id="my-donut">Device donut chart</title>
 
         {arcs.map((d) => (
-          <>
+          <React.Fragment key={d.data.category}>
             <path
               id={`arc-${d.data.category}`}
               fill={color(d.data.category)}
@@ -249,7 +250,7 @@ function ExampleThree() {
                 {`${d.data.category} ${d.data.count}%`}
               </textPath>
             </text>
-          </>
+          </React.Fragment>
         ))}
       </svg>
     </div>
