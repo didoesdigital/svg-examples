@@ -67,7 +67,7 @@ export default function App() {
 
 function Home() {
   return (
-    <div>
+    <main>
       <h2>Home</h2>
       <div style={{maxWidth: "650px", width: "100%", textAlign: "left", margin: "0 auto" }}>
         <p>Some resources:</p>
@@ -85,13 +85,13 @@ function Home() {
           <li><a href="https://stackoverflow.com/questions/18467982/are-svg-parameters-such-as-xmlns-and-version-needed">Stack Overflow: Are SVG parameters such as 'xmlns' and 'version' needed?</a></li>
         </ul>
       </div>
-    </div>
+    </main>
   );
 }
 
 function ExampleOne() {
   return (
-    <div>
+    <main>
       <h2>Example one</h2>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes">Basic shapes</a>:</p>
       {/* Default is: width="300" height="150" */}
@@ -116,7 +116,7 @@ function ExampleOne() {
 
         <text x="120" y="0" dy="1.5em" fill="#3C3941" fontSize="1.4em" fontWeight="600">text</text>
       </svg>
-    </div>
+    </main>
   );
 }
 
@@ -221,7 +221,7 @@ function ExampleTwo() {
   href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🎉</text></svg>'
   >`
   return (
-    <div>
+    <main>
       <h2>Example two</h2>
 
       <button onClick={() => updateFavicon()}>Update favicon</button>
@@ -229,7 +229,7 @@ function ExampleTwo() {
         {codeString}
       </SyntaxHighlighter>
 
-    </div>
+    </main>
   );
 }
 
@@ -259,7 +259,7 @@ function ExampleThree() {
     .outerRadius(radius * 0.8);
 
   return (
-    <div>
+    <main>
       <h2>Example three</h2>
       <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} style={{ maxWidth: `${width}px` }} aria-labelledby="my-donut">
         <title id="my-donut">Device donut chart</title>
@@ -284,7 +284,7 @@ function ExampleThree() {
           </React.Fragment>
         ))}
       </svg>
-    </div>
+    </main>
   );
 }
 
