@@ -6,6 +6,8 @@ import {
 } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import { scaleOrdinal } from "d3-scale";
+import { arc, pie } from "d3-shape";
 
 export default function App() {
   return (
@@ -200,9 +202,56 @@ function ExampleTwo() {
 }
 
 function ExampleThree() {
+  const data = [
+    { category: "Mobile", count: 60 },
+    { category: "Tablet", count: 1 },
+    { category: "Desktop", count: 39 },
+  ];
+
+  const color = scaleOrdinal()
+    .domain(data.map(d => d.category))
+    .range(['#9880C2', '#E17547', '#09A573'])
+
+  const width = 300;
+  const height = 300;
+  const radius = Math.min(width, height) / 2;
+
+  const pieGenerator = pie()
+    .padAngle(0.005)
+    .value(d => d.count);
+
+  const arcs = pieGenerator(data);
+
+  const arcGenerator = arc()
+    .innerRadius(radius * 0.46)
+    .outerRadius(radius * 0.8);
+
   return (
     <div>
       <h2>Example three</h2>
+      <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} style={{ maxWidth: `${width}px` }} aria-labelledby="my-donut">
+        <title id="my-donut">Device donut chart</title>
+
+        {arcs.map((d) => (
+          <>
+            <path
+              id={`arc-${d.data.category}`}
+              fill={color(d.data.category)}
+              d={arcGenerator(d)}
+              role="presentation"
+            />
+            <text dy="-0.5em" fill="#676170" opacity={d.data.count < 5 ? 0 : 1}>
+              <textPath
+                startOffset="25%"
+                style={{textAnchor: "middle"}}
+                href={`#arc-${d.data.category}`}
+              >
+                {`${d.data.category} ${d.data.count}%`}
+              </textPath>
+            </text>
+          </>
+        ))}
+      </svg>
     </div>
   );
 }
