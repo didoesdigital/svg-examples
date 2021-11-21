@@ -1,5 +1,7 @@
 # README
 
+[SVG examples demo](https://didoesdigital.github.io/svg-examples/)
+
 This project shows some basic SVG examples, including:
 
 - syntax and basic shapes
@@ -8,6 +10,8 @@ This project shows some basic SVG examples, including:
 - donut chart
 
 It also includes resources, including articles for learning more and tools for optimisation and converting SVG to JSX.
+
+This project is deployed to GitHub pages using `yarn run deploy` from the `main` branch, which pushes to the `gh-pages` branch. GitHub Pages doesn’t support React Router's default client-side routing behaviour so visiting any direct link other the homepage will show a 404 error page. [Notes on client-side routing](https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing)
 
 To run the project locally, clone the repo and run `yarn` to install dependencies, then follow the steps below.
 
