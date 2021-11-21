@@ -104,17 +104,17 @@ function Home() {
         <p>Some resources:</p>
         <ul style={{ lineHeight: "1.5em" }}>
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG">MDN docs: SVG</a></li>
-          <li><a href="https://caniuse.com/?search=svg">CanIUse SVG…</a></li>
+          <li><a href="https://caniuse.com/?search=svg">CanIUse SVG… by Alexis Deveria and community</a></li>
           <li><a href="https://wattenberger.com/guide/scaling-svg">Scaling SVG Elements: Getting an understanding of viewBox by Amelia Wattenberger</a></li>
-          <li><a href="https://css-tricks.com/accessible-svgs/">Accessible SVGs</a></li>
-          <li><a href="https://svgtojsx.com/">SVG-to-JSX</a></li>
-          <li><a href="https://transform.tools/">Transform SVG to jsx</a></li>
-          <li><a href="https://www.figma.com/community/plugin/749818562498396194/SVG-to-JSX">Figma SVG to JSX</a></li>
+          <li><a href="https://css-tricks.com/accessible-svgs/">Accessible SVGs by Heather Migliorisi</a></li>
+          <li><a href="https://svgtojsx.com/">SVG-to-JSX by Vishnu Baliga</a></li>
+          <li><a href="https://transform.tools/">Transform SVG to jsx by Ritesh Kumar</a></li>
+          <li><a href="https://www.figma.com/community/plugin/749818562498396194/SVG-to-JSX">Figma SVG to JSX by Sara Vieira</a></li>
           <li><a href="https://react-svgr.com/docs/getting-started">React SVGR</a></li>
           <li><a href="https://gregberge.com/blog/svg-to-react-component-with-svgr">SVG to React component with SVGR by Greg Bergé</a></li>
-          <li><a href="https://svg-path-visualizer.netlify.app">Path visualizer</a></li>
           <li><a href="https://css-tricks.com/tips-aligning-icons-text/">Tips for Aligning Icons to Text by Geoff Graham</a></li>
           <li><a href="https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4">Align SVG Icons to Text and Say Goodbye to Font Icons by Elliot Dahl</a></li>
+          <li><a href="https://svg-path-visualizer.netlify.app">Path visualizer by Mathieu Dutour</a></li>
           <li><a href="https://stackoverflow.com/questions/18467982/are-svg-parameters-such-as-xmlns-and-version-needed">Stack Overflow: Are SVG parameters such as 'xmlns' and 'version' needed?</a></li>
         </ul>
       </div>
