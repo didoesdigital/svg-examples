@@ -307,7 +307,7 @@ function ExampleFour() {
 
   return (
     <main>
-      <h1>Example three</h1>
+      <h1>Example four</h1>
       <svg viewBox={`${-width / 2} ${-height / 2} ${width} ${height}`} style={{ maxWidth: `${width}px` }} aria-labelledby="my-donut">
         <title id="my-donut">Device donut chart</title>
 
