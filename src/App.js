@@ -265,6 +265,8 @@ function ExampleTwo() {
         {codeString}
       </SyntaxHighlighter>
 
+      <p>Learn more about <a href="https://dev.to/masakudamatsu/favicon-nightmare-how-to-maintain-sanity-3al7">favicons</a></p>
+
     </main>
   );
 }
